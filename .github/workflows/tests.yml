@@ -12,7 +12,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: ["3.10", "3.12"]
+        # 3.11 is the floor for the test tooling: the drift gate and its tests
+        # import tomllib. The package itself still declares >=3.10, so the
+        # floor is narrower here than in pyproject.toml — recorded as a
+        # follow-up, not silently changed.
+        python-version: ["3.11", "3.12"]
 
     steps:
       - uses: actions/checkout@v4
