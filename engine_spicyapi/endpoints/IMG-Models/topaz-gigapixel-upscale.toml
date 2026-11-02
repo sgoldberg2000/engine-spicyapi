@@ -1,0 +1,59 @@
+id = "topaz-gigapixel-upscale"
+label = "Topaz Gigapixel · Upscale"
+category = "IMG"
+platform = "spicyapi"
+endpoint = "topaz/gigapixel/upscale"
+description = "Topaz Gigapixel enlarges one image, either faithfully or with generative reconstruction, chosen by the preset. Framing and aspect ratio are kept and only the pixel count goes up. For transparent artwork send a PNG with an alpha channel and pick the transparent preset with PNG output. Review generated facial detail before using an enlarged portrait."
+
+[pricing]
+base_cost = 0.12
+currency = "USD"
+note = "from $0.12/image at 2k; 4k $0.12-$0.60 and 8k $0.36-$2.04 depending on preset; 36 tiers"
+
+[general]
+kind = "image"
+prompt = "none"
+image_url_param = "image_url"
+
+[params.preset]
+label = "Preset"
+type = "select"
+default = "standard_v2"
+affects_price = true
+options = [
+  { value = "standard_v2", label = "Standard v2" },
+  { value = "high_fidelity_v3", label = "High Fidelity v3" },
+  { value = "low_resolution_v2", label = "Low Resolution v2" },
+  { value = "cgi", label = "CGI" },
+  { value = "text_refine", label = "Text Refine" },
+  { value = "wonder_4", label = "Wonder 4" },
+  { value = "wonder_3_5", label = "Wonder 3.5" },
+  { value = "recover_3", label = "Recover 3" },
+  { value = "standard_max", label = "Standard Max" },
+  { value = "redefine", label = "Redefine" },
+  { value = "detail", label = "Detail" },
+  { value = "transparent", label = "Transparent" },
+]
+note = "standard_v2 (the default) for general photos; high_fidelity_v3 for already sharp high-resolution sources; low_resolution_v2 for small or heavily compressed images; cgi for illustrations and renders; text_refine for text, logos and graphics; transparent for artwork with an alpha channel (needs PNG output); wonder_4, wonder_3_5, recover_3, standard_max, redefine and detail reconstruct more of the image and cost more."
+
+[params.resolution]
+label = "Resolution"
+type = "select"
+default = "4k"
+affects_price = true
+options = [
+  { value = "2k", label = "2K" },
+  { value = "4k", label = "4K" },
+  { value = "8k", label = "8K" },
+]
+note = "Output size: about 4 MP (2k), 16.8 MP (4k) or 67 MP (8k) with the source aspect ratio kept. The price depends on this tier and on the preset."
+
+[params.output_format]
+label = "Output Format"
+type = "select"
+default = "jpeg"
+options = [
+  { value = "jpeg", label = "JPEG" },
+  { value = "png", label = "PNG" },
+]
+note = "jpeg (default) keeps files small; png avoids another round of lossy compression and is required for the transparent preset. The format does not change the price."
