@@ -1,0 +1,57 @@
+id = "topaz-bloom-upscale"
+label = "Topaz Bloom · Upscale"
+category = "IMG"
+platform = "spicyapi"
+endpoint = "topaz/bloom/upscale"
+description = "Topaz Bloom enlarges one image while adding a creative reconstruction pass, so new detail is invented rather than only interpolated. It suits AI renders and artwork more than photographs. Four settings shape it: the preset picks which Bloom model runs, creativity sets how freely it may invent, an optional prompt steers what the new detail looks like, and resolution sets the output size. Composition and aspect ratio are kept."
+
+[pricing]
+base_cost = 0.36
+currency = "USD"
+note = "$0.36/image at 2k, $1.08 at 4k, $4.08 at 8k; preset, creativity, prompt and format do not change the price"
+
+[general]
+kind = "image"
+prompt = "optional"
+image_url_param = "image_url"
+
+[params.preset]
+label = "Preset"
+type = "select"
+default = "bloom_2"
+options = [
+  { value = "bloom_2", label = "Bloom 2" },
+  { value = "bloom", label = "Bloom" },
+  { value = "bloom_realism", label = "Bloom Realism" },
+]
+note = "bloom_2 (the default) is the newest and invents the most convincing new detail; bloom suits illustrations, artwork and CG; bloom_realism keeps a natural photographic look and accepts creativity only from 1 to 4 — higher values are refused for that preset."
+
+[params.creativity]
+label = "Creativity"
+type = "integer"
+default = 3
+min = 1
+max = 9
+note = "How freely the image is reinterpreted, 1 to 9: 1 stays closest to the source, 9 adds the most new detail. With bloom_realism only 1 to 4 is accepted. Does not change the price."
+
+[params.resolution]
+label = "Resolution"
+type = "select"
+default = "4k"
+affects_price = true
+options = [
+  { value = "2k", label = "2K" },
+  { value = "4k", label = "4K" },
+  { value = "8k", label = "8K" },
+]
+note = "Output size: about 4 MP (2k), 16.8 MP (4k) or 67 MP (8k) with the source aspect ratio kept. This is the only setting that changes the price."
+
+[params.output_format]
+label = "Output Format"
+type = "select"
+default = "jpeg"
+options = [
+  { value = "jpeg", label = "JPEG" },
+  { value = "png", label = "PNG" },
+]
+note = "jpeg (default) keeps files small; png avoids another round of lossy compression but is several times larger. The format does not change the price."
