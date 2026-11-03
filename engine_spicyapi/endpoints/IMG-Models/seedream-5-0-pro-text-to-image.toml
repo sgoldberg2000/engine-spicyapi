@@ -43,10 +43,11 @@ type = "select"
 default = "2k"
 options = [
   { value = "1k", label = "1k" },
+  { value = "1.5k", label = "1.5k" },
   { value = "2k", label = "2k" },
 ]
 affects_price = true
-note = "1k or 2k; 2k by default. The tier sets both the pixel count and the price band, so it is not just a sharpness knob."
+note = "1k, 1.5k or 2k; 2k by default. The tier sets both the pixel count and the price band, so it is not just a sharpness knob."
 
 [params.output_format]
 label = "Output Format"

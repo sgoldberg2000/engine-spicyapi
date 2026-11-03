@@ -34,20 +34,21 @@ label = "Resolution"
 type = "select"
 default = "768p"
 options = [
+  { value = "480p", label = "480p" },
   { value = "768p", label = "768p" },
   { value = "2k", label = "2k" },
 ]
 affects_price = true
-note = "768p or 2k, both native. Draft at 768p, deliver at 2k."
+note = "480p, 768p or 2k, all native. Draft at 480p or 768p, deliver at 2k."
 
 [params.duration_seconds]
 label = "Duration Seconds"
 type = "integer"
 default = 5
 min = 5
-max = 15
+max = 30
 affects_price = true
-note = "Whole seconds, 5 to 15. Drives the price."
+note = "Whole seconds, 5 to 30. Drives the price."
 
 [params.enable_prompt_expansion]
 label = "Enable Prompt Expansion"
