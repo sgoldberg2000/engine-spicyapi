@@ -137,3 +137,43 @@ def test_fallback_spec_is_marked_unknown():
 def test_missing_endpoints_dir_is_not_an_error(tmp_path):
     catalog = load_catalog(tmp_path / "nope")
     assert len(catalog) == 0
+
+
+# --- evidence-based status -------------------------------------------------
+
+def test_every_shipped_endpoint_defaults_to_experimental():
+    catalog = load_catalog()
+    assert catalog.models()
+    for model in catalog.models():
+        assert catalog.status(model) in {"experimental", "beta", "proven"}
+
+
+def test_status_file_is_read_beside_the_catalog(tmp_path):
+    import json
+
+    endpoints = tmp_path / "endpoints"
+    (endpoints / "IMG-Models").mkdir(parents=True)
+    (endpoints / "IMG-Models" / "demo.toml").write_text(
+        "id = \"demo\"\nlabel = \"Demo\"\ncategory = \"IMG\"\nendpoint = \"demo/model\"\n"
+        "[general]\nkind = \"image\"\nprompt = \"none\"\n"
+    )
+    (tmp_path / "status.json").write_text(json.dumps({
+        "endpoints": {"demo/model": {"status": "proven", "ok": 9, "fail": 0}}
+    }))
+    catalog = load_catalog(endpoints)
+    assert catalog.status("demo/model") == "proven"
+
+
+def test_unknown_status_value_is_ignored(tmp_path):
+    import json
+
+    endpoints = tmp_path / "endpoints"
+    (endpoints / "IMG-Models").mkdir(parents=True)
+    (endpoints / "IMG-Models" / "demo.toml").write_text(
+        "id = \"demo\"\nlabel = \"Demo\"\ncategory = \"IMG\"\nendpoint = \"demo/model\"\n"
+        "[general]\nkind = \"image\"\nprompt = \"none\"\n"
+    )
+    (tmp_path / "status.json").write_text(json.dumps({
+        "endpoints": {"demo/model": {"status": "amazing"}}
+    }))
+    assert load_catalog(endpoints).status("demo/model") == "experimental"

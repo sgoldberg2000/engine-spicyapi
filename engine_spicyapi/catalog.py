@@ -66,6 +66,11 @@ class EndpointSpec:
     prompt_mode: str = "required"
     known: bool = True
     params: dict = field(default_factory=dict)
+    #: How much real use this endpoint has seen. ``experimental`` means it was
+    #: written from the provider's schema and never called; ``beta`` means some
+    #: calls worked; ``proven`` means a track record. Evidence lives beside the
+    #: catalog in ``status.json`` and is written by tools/engine_status.py.
+    status: str = "experimental"
 
     @property
     def prompt_required(self) -> bool:
@@ -149,12 +154,44 @@ class Catalog:
     def models(self) -> list[str]:
         return sorted(self._specs)
 
+    def status(self, model: str) -> str:
+        """How much real use this endpoint has seen (see EndpointSpec.status)."""
+        spec = self._specs.get(model)
+        return spec.status if spec is not None else "experimental"
+
+
+STATUS_VALUES = ("experimental", "beta", "proven")
+
+
+def _load_status(root: Path) -> dict:
+    """Endpoint -> status, from ``status.json`` beside the endpoint folders."""
+    path = root.parent / "status.json"
+    if not path.is_file() or tomllib is None:
+        return {}
+    try:
+        import json
+
+        with open(path, encoding="utf-8") as handle:
+            raw = json.load(handle)
+    except Exception:
+        return {}
+    endpoints = raw.get("endpoints") if isinstance(raw, dict) else None
+    if not isinstance(endpoints, dict):
+        return {}
+    out = {}
+    for model, entry in endpoints.items():
+        value = (entry or {}).get("status") if isinstance(entry, dict) else entry
+        if isinstance(value, str) and value in STATUS_VALUES:
+            out[str(model)] = value
+    return out
+
 
 def load_catalog(endpoints_dir: Path | None = None) -> Catalog:
     """Read every endpoint TOML under ``endpoints/``. Never raises."""
     if tomllib is None:
         return Catalog()
     root = Path(endpoints_dir) if endpoints_dir else ENDPOINTS_DIR
+    statuses = _load_status(root)
     specs: dict[str, EndpointSpec] = {}
     for category, dir_name in CATEGORY_DIRS.items():
         directory = root / dir_name
@@ -163,6 +200,7 @@ def load_catalog(endpoints_dir: Path | None = None) -> Catalog:
         for toml_file in sorted(directory.glob("*.toml")):
             spec = _read_spec(toml_file, category)
             if spec is not None and spec.model:
+                spec.status = statuses.get(spec.model, spec.status)
                 specs.setdefault(spec.model, spec)
     return Catalog(specs)
 
