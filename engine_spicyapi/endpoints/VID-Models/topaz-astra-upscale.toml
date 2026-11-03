@@ -1,0 +1,30 @@
+id = "topaz-astra-upscale"
+label = "Topaz Astra · Upscale"
+category = "VID"
+platform = "spicyapi"
+endpoint = "topaz/astra/upscale"
+description = "Astra’s upscale endpoint adds imagined texture to the supplied scene rather than verifying missing camera detail. It returns one MP4 in the chosen tier, making the result a candidate for creative approval rather than exact identity restoration."
+
+[pricing]
+base_cost = 0.36
+currency = "USD"
+note = "$0.36/image; 3 price tier(s), up to $0.6"
+
+[general]
+kind = "video"
+prompt = "optional"
+image_url_param = "video_url"
+
+[params.creativity_level]
+label = "Creativity Level"
+type = "select"
+default = "low"
+options = [{ value = "low", label = "low" }, { value = "medium", label = "medium" }, { value = "high", label = "high" }]
+note = "How much new detail is invented: low stays closest to the source, high is the most creative. Does not change the price."
+
+[params.resolution]
+label = "Resolution"
+type = "select"
+default = "1080p"
+options = [{ value = "720p", label = "720p" }, { value = "1080p", label = "1080p" }, { value = "4k", label = "4k" }]
+note = "Output tier; the clip's aspect ratio is kept. Sets the per-second rate."

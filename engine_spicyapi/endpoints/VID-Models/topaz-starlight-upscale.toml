@@ -1,0 +1,30 @@
+id = "topaz-starlight-upscale"
+label = "Topaz Starlight · Upscale"
+category = "VID"
+platform = "spicyapi"
+endpoint = "topaz/starlight/upscale"
+description = "Starlight’s upscale endpoint generates plausible surface information where a small or compressed frame is ambiguous. It accepts preset and resolution controls, with no text prompt, and preserves the shot’s duration and sound."
+
+[pricing]
+base_cost = 0.07
+currency = "USD"
+note = "$0.07/image; 20 price tier(s), up to $0.302609"
+
+[general]
+kind = "video"
+prompt = "none"
+image_url_param = "video_url"
+
+[params.preset]
+label = "Preset"
+type = "select"
+default = "precise_2_6"
+options = [{ value = "precise_2_6", label = "precise_2_6" }, { value = "precise_2_5", label = "precise_2_5" }, { value = "fast_3", label = "fast_3" }, { value = "fast_2", label = "fast_2" }, { value = "mini", label = "mini" }]
+note = "Which Starlight model to run. Sets the per-second rate together with resolution."
+
+[params.resolution]
+label = "Resolution"
+type = "select"
+default = "1080p"
+options = [{ value = "720p", label = "720p" }, { value = "1080p", label = "1080p" }, { value = "2k", label = "2k" }, { value = "4k", label = "4k" }]
+note = "Output tier; the clip's aspect ratio is kept. Sets the per-second rate."

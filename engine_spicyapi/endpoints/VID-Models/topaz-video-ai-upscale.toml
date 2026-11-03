@@ -1,0 +1,30 @@
+id = "topaz-video-ai-upscale"
+label = "Topaz Video AI · Upscale"
+category = "VID"
+platform = "spicyapi"
+endpoint = "topaz/video-ai/upscale"
+description = "Use the enlargement endpoint when the main task is fitting an existing shot into a larger frame. The output keeps the scene’s timing and sound, while the selected model determines how edges and damaged detail are treated."
+
+[pricing]
+base_cost = 0.00705882
+currency = "USD"
+note = "$0.00705882/image; 84 price tier(s), up to $0.0585366"
+
+[general]
+kind = "video"
+prompt = "none"
+image_url_param = "video_url"
+
+[params.preset]
+label = "Preset"
+type = "select"
+default = "proteus"
+options = [{ value = "proteus", label = "proteus" }, { value = "proteus_natural", label = "proteus_natural" }, { value = "rhea", label = "rhea" }, { value = "artemis_hq", label = "artemis_hq" }, { value = "artemis_mq", label = "artemis_mq" }, { value = "artemis_lq", label = "artemis_lq" }, { value = "artemis_medium_halo", label = "artemis_medium_halo" }, { value = "artemis_strong_halo", label = "artemis_strong_halo" }, { value = "artemis_aliasing_moire", label = "artemis_aliasing_moire" }, { value = "gaia_hq", label = "gaia_hq" }, { value = "gaia_cg", label = "gaia_cg" }, { value = "gaia_2_animation", label = "gaia_2_animation" }, { value = "theia_detail", label = "theia_detail" }, { value = "theia_fidelity", label = "theia_fidelity" }, { value = "iris_mq", label = "iris_mq" }, { value = "iris_lq", label = "iris_lq" }, { value = "dione_dv", label = "dione_dv" }, { value = "dione_tv", label = "dione_tv" }, { value = "dione_robust", label = "dione_robust" }, { value = "dione_dehalo", label = "dione_dehalo" }, { value = "dione_robust_dehalo", label = "dione_robust_dehalo" }]
+note = "Which Topaz Video AI enhancement model to run (Proteus, Rhea, Artemis, Gaia, Theia, Iris or Dione). Sets the per-second rate together with resolution."
+
+[params.resolution]
+label = "Resolution"
+type = "select"
+default = "1080p"
+options = [{ value = "720p", label = "720p" }, { value = "1080p", label = "1080p" }, { value = "2k", label = "2k" }, { value = "4k", label = "4k" }]
+note = "Output tier; the clip's aspect ratio is kept. Proteus Natural and Gaia 2 Animation always enlarge 2x. Sets the per-second rate."

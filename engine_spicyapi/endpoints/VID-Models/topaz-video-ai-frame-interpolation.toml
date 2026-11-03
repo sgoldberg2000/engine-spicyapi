@@ -1,0 +1,44 @@
+id = "topaz-video-ai-frame-interpolation"
+label = "Topaz Video AI · Frame interpolation"
+category = "VID"
+platform = "spicyapi"
+endpoint = "topaz/video-ai/frame-interpolation"
+description = "The interpolation endpoint reads the source at 30 fps and builds frames for the requested output cadence. Normal-speed conversion retains audio; the tested slow-motion results extend the action and contain no soundtrack."
+
+[pricing]
+base_cost = 0.002
+currency = "USD"
+note = "$0.002/image; 400 price tier(s), up to $1.81333"
+
+[general]
+kind = "video"
+prompt = "none"
+image_url_param = "video_url"
+
+[params.fps]
+label = "Fps"
+type = "integer"
+default = 60
+options = [{ value = "30", label = "30" }, { value = "48", label = "48" }, { value = "50", label = "50" }, { value = "60", label = "60" }, { value = "120", label = "120" }]
+note = "Output frame rate. The source is read at 30 fps. Sets the per-second rate."
+
+[params.preset]
+label = "Preset"
+type = "select"
+default = "apollo"
+options = [{ value = "apollo", label = "apollo" }, { value = "apollo_fast", label = "apollo_fast" }, { value = "chronos", label = "chronos" }, { value = "chronos_fast", label = "chronos_fast" }, { value = "aion", label = "aion" }]
+note = "Which Topaz interpolation model generates the new frames: Apollo, Apollo Fast, Chronos, Chronos Fast or Aion. Sets the per-second rate."
+
+[params.resolution]
+label = "Resolution"
+type = "select"
+default = "1080p"
+options = [{ value = "720p", label = "720p" }, { value = "1080p", label = "1080p" }, { value = "2k", label = "2k" }, { value = "4k", label = "4k" }]
+note = "Resolution to process and return the clip at; the aspect ratio is kept. Sets the per-second rate."
+
+[params.slow_motion]
+label = "Slow Motion"
+type = "integer"
+default = 1
+options = [{ value = "1", label = "1" }, { value = "2", label = "2" }, { value = "4", label = "4" }, { value = "8", label = "8" }]
+note = "Slow-motion factor: 2 doubles the clip's length, 4 quadruples it, 1 keeps the original speed. Billing follows the source clip's length; the factor sets the per-second rate."

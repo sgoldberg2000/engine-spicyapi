@@ -1,0 +1,479 @@
+{
+ "code": 200,
+ "msg": "success",
+ "data": {
+  "slug": "topaz/starlight/upscale",
+  "model": "topaz/starlight/upscale",
+  "family": "topaz/starlight",
+  "familyPageSlug": "topaz-starlight",
+  "familyDisplayName": "Topaz Starlight",
+  "displayName": "Topaz Starlight \u00b7 Generative Upscale",
+  "provider": "Topaz Labs",
+  "modality": "video",
+  "tasks": [
+   "upscale"
+  ],
+  "mature": false,
+  "policyTier": "unspecified",
+  "async": true,
+  "status": "live",
+  "callable": true,
+  "sortWeight": 0,
+  "pageSlug": "topaz-starlight-upscale",
+  "redirectFrom": [],
+  "version": "v1",
+  "availability": "available",
+  "badges": [
+   "high_resolution"
+  ],
+  "assets": [
+   {
+    "id": "cover-main",
+    "kind": "cover",
+    "mediaKey": "models/covers/topaz-starlight/d0d3dd49999b2cef.webp",
+    "url": "https://cdn.spicyapi.ai/models/covers/topaz-starlight/d0d3dd49999b2cef.webp",
+    "mimeType": "image/webp",
+    "width": 1672,
+    "height": 941,
+    "sortWeight": 0
+   },
+   {
+    "id": "feature-cyclists",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-starlight/fafa0baa64251b3c.webp",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/fafa0baa64251b3c.webp",
+    "mimeType": "image/webp",
+    "width": 1600,
+    "height": 600,
+    "sortWeight": 150
+   },
+   {
+    "id": "feature-street",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-starlight/3aa3bad0f77ac993.webp",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/3aa3bad0f77ac993.webp",
+    "mimeType": "image/webp",
+    "width": 1600,
+    "height": 600,
+    "sortWeight": 250
+   },
+   {
+    "id": "example-cyclists-precise26-1080p",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-starlight/7c0ee669c28ce589.mp4",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/7c0ee669c28ce589.mp4",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "posterMediaKey": "models/examples/topaz-starlight/f1813fde242d03aa.webp",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/f1813fde242d03aa.webp",
+    "sortWeight": 0,
+    "durationMs": 3018
+   }
+  ],
+  "summary": "Reconstruct a degraded clip with a selected Starlight preset and deliver a newly detailed MP4 through 4K.",
+  "seoTitle": "Topaz Starlight API \u2014 Precise, Fast & Mini Upscale",
+  "seoDescription": "Topaz Starlight upscales 1\u201360 second MP4 footage with 5 presets, from Precise 2.6 to Mini, and 720p\u20134K tiers with reconstructed texture and audio.",
+  "price": {
+   "amount": "0.07",
+   "unit": "per_second",
+   "variant": "preset=fast_2;resolution=1080p",
+   "tiers": 20,
+   "variants": [
+    {
+     "variant": "preset=fast_2;resolution=1080p",
+     "amount": "0.07",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=fast_2;resolution=720p",
+     "amount": "0.07",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=fast_3;resolution=1080p",
+     "amount": "0.138461538462",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=fast_3;resolution=720p",
+     "amount": "0.138461538462",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=mini;resolution=1080p",
+     "amount": "0.138461538462",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=mini;resolution=720p",
+     "amount": "0.138461538462",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=precise_2_5;resolution=1080p",
+     "amount": "0.138461538462",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=precise_2_5;resolution=720p",
+     "amount": "0.138461538462",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=precise_2_6;resolution=1080p",
+     "amount": "0.138461538462",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=precise_2_6;resolution=720p",
+     "amount": "0.138461538462",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=fast_2;resolution=2k",
+     "amount": "0.151304347826",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=fast_2;resolution=4k",
+     "amount": "0.151304347826",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=fast_3;resolution=2k",
+     "amount": "0.302608695652",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=fast_3;resolution=4k",
+     "amount": "0.302608695652",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=mini;resolution=2k",
+     "amount": "0.302608695652",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=mini;resolution=4k",
+     "amount": "0.302608695652",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=precise_2_5;resolution=2k",
+     "amount": "0.302608695652",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=precise_2_5;resolution=4k",
+     "amount": "0.302608695652",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=precise_2_6;resolution=2k",
+     "amount": "0.302608695652",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=precise_2_6;resolution=4k",
+     "amount": "0.302608695652",
+     "unit": "per_second"
+    }
+   ]
+  },
+  "requestedLocale": "en",
+  "contentLocale": "en",
+  "isFallback": false,
+  "updatedAt": "2026-11-03T05:00:56.076373Z",
+  "publishedAt": "2026-11-03T05:00:56.076373Z",
+  "familyContent": {
+   "family": "topaz/starlight",
+   "summary": "Topaz Starlight uses diffusion to reconstruct the texture of a low-resolution or compressed video. Its output can show fabric, bicycle components and architectural surfaces that the source no longer resolves clearly. This is generative restoration: the visible detail is a prediction, so an improved-looking face is not proof of the original person\u2019s exact appearance.",
+   "introductionHtml": "",
+   "seoTitle": "Topaz Starlight API \u2014 Diffusion Video to 4K",
+   "seoDescription": "Topaz Starlight reconstructs compressed video with 5 diffusion presets and 720p to 4K output, preserving audio in MP4 clips lasting 1\u201360 seconds.",
+   "faq": [
+    {
+     "question": "How is usage calculated?",
+     "answer": "Starlight usage follows the incoming clip\u2019s duration, rounded upward first to complete seconds and then to complete billing steps. Preset and delivery tier determine each step\u2019s length, with a minimum of one step per job. The shown per-second amount comes from dividing a step\u2019s price by its duration. Uploaded footage reserves funds for its measured length; a linked file initially reserves the maximum clip length. Settlement returns any excess hold, while unsuccessful processing is not billed. Starlight Precise 2.6, Precise 2.5, Fast 3 and Mini share a rate; Fast 2 costs less. The 720p and 1080p tiers share a rate, as do 2K and 4K; the higher pair costs more."
+    },
+    {
+     "question": "What happens to the audio?",
+     "answer": "The returned Starlight video carries the incoming audio at its original timing; visual reconstruction does not retime the scene."
+    },
+    {
+     "question": "How do I choose the settings?",
+     "answer": "For archives, consider Mini; for an AI-generated shot needing a realistic finish, examine Precise 2.5 alongside the default Precise 2.6."
+    }
+   ],
+   "howTo": [
+    {
+     "title": "Prepare a short take",
+     "body": "Find a passage that includes both textured surfaces and a moving person."
+    },
+    {
+     "title": "Choose the treatment",
+     "body": "Try Precise 2.6 first, then judge whether a speed-focused or archive-oriented preset fits the material."
+    },
+    {
+     "title": "Review before delivery",
+     "body": "Approve the reconstruction only after checking faces and repeating patterns throughout the shot."
+    }
+   ],
+   "specs": [],
+   "coverMediaKey": "models/covers/topaz-starlight/d0d3dd49999b2cef.webp",
+   "coverUrl": "https://cdn.spicyapi.ai/models/covers/topaz-starlight/d0d3dd49999b2cef.webp",
+   "coverAlt": "Illustrated Topaz Starlight cover: translucent film frames sharpen amid sparse stars and amber light in a dark exhibition room; no actual restored footage is shown.",
+   "eyebrow": "TOPAZ STARLIGHT API",
+   "tagline": "Give compressed footage a newly resolved surface.",
+   "highlights": [
+    {
+     "value": "5",
+     "label": "Restoration presets",
+     "note": "Precise, Fast and Mini provide five ways to reconstruct a damaged picture."
+    },
+    {
+     "value": "4K",
+     "label": "Largest output tier",
+     "note": "Deliver reconstructed footage at up to 4K while keeping its original framing."
+    },
+    {
+     "value": "~75 S",
+     "label": "Measured processing time",
+     "note": "A three-second cyclist clip took about 75 seconds at 1080p; this is a sample, not a deadline."
+    }
+   ],
+   "features": [
+    {
+     "eyebrow": "Purpose-built models",
+     "title": "Precise 2.6 \u00b7 1080p",
+     "body": "Cyclist frame: low-bitrate source left, Starlight Precise 2.6 1080p right, with reconstructed cloth, walls and facial features.",
+     "assetId": "feature-cyclists",
+     "variant": "split"
+    },
+    {
+     "eyebrow": "Inspect the result",
+     "title": "Starlight \u00b7 1080p",
+     "body": "Second street frame: compressed input left and Starlight right, showing reconstructed tram panels and building lines.",
+     "assetId": "feature-street",
+     "variant": "stacked"
+    }
+   ],
+   "useCases": [
+    {
+     "title": "Put the clip to work",
+     "body": "Rework a street clip that has been compressed until jerseys and masonry become smears. Restore a short selected take before integrating it into a city film, and inspect reconstructed faces at both normal speed and a paused frame."
+    },
+    {
+     "title": "Inspect the result",
+     "body": "Give a chosen AI video take a more resolved finish or assess a damaged archive excerpt. Test representative movement and fine surfaces first, then decide whether the reconstructed appearance suits the intended delivery."
+    }
+   ],
+   "limits": [
+    {
+     "scope": "upscale",
+     "body": "Reconstructed detail can alter faces, lettering and small shapes. Fast 2 does not deliver below 1080p, so selecting the 720p tier is not a way to obtain a smaller Fast 2 file."
+    }
+   ],
+   "closing": "Choose the final take before requesting Starlight and keep each MP4 between 1 and 60 seconds. Use `precise_2_6` for an initial 1080p trial. There is no text prompt: changing the preset or source is how you steer this restoration. Compare several moments rather than judging one attractive still. Examine facial features, bicycle geometry and repeated wall patterns for invented texture or temporal changes. A brief Fast 2 portrait took about a minute in our run; allow additional time for longer footage.",
+   "assetNotes": {
+    "cover-main": {
+     "alt": "Translucent film panels in a dark gallery, surrounded by sparse stars and warm amber trails.",
+     "caption": ""
+    },
+    "example-cyclists-precise26-1080p": {
+     "alt": "Cyclists passing a tram and buildings in a 1920\u00d71080 Precise 2.6 MP4, with reconstructed clothing and facial features.",
+     "caption": ""
+    },
+    "feature-cyclists": {
+     "alt": "A cyclist\u2019s jersey, face and bicycle compared across compressed input and Precise 2.6 output.",
+     "caption": ""
+    },
+    "feature-street": {
+     "alt": "City fa\u00e7ades and tram surfaces in aligned street crops before and after Starlight restoration.",
+     "caption": ""
+    }
+   },
+   "layout": "editorial",
+   "assets": [
+    {
+     "id": "feature-street",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-starlight/3aa3bad0f77ac993.webp",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/3aa3bad0f77ac993.webp",
+     "mimeType": "image/webp",
+     "width": 1600,
+     "height": 600,
+     "sortWeight": 250,
+     "alt": "City fa\u00e7ades and tram surfaces in aligned street crops before and after Starlight restoration."
+    },
+    {
+     "id": "feature-cyclists",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-starlight/fafa0baa64251b3c.webp",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/fafa0baa64251b3c.webp",
+     "mimeType": "image/webp",
+     "width": 1600,
+     "height": 600,
+     "sortWeight": 150,
+     "alt": "A cyclist\u2019s jersey, face and bicycle compared across compressed input and Precise 2.6 output."
+    },
+    {
+     "id": "cover-main",
+     "kind": "cover",
+     "mediaKey": "models/covers/topaz-starlight/d0d3dd49999b2cef.webp",
+     "url": "https://cdn.spicyapi.ai/models/covers/topaz-starlight/d0d3dd49999b2cef.webp",
+     "mimeType": "image/webp",
+     "width": 1672,
+     "height": 941,
+     "sortWeight": 0,
+     "alt": "Translucent film panels in a dark gallery, surrounded by sparse stars and warm amber trails."
+    },
+    {
+     "id": "example-cyclists-precise26-1080p",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-starlight/7c0ee669c28ce589.mp4",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/7c0ee669c28ce589.mp4",
+     "mimeType": "video/mp4",
+     "width": 1920,
+     "height": 1080,
+     "posterMediaKey": "models/examples/topaz-starlight/f1813fde242d03aa.webp",
+     "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/f1813fde242d03aa.webp",
+     "sortWeight": 0,
+     "durationMs": 3018,
+     "alt": "Cyclists passing a tram and buildings in a 1920\u00d71080 Precise 2.6 MP4, with reconstructed clothing and facial features."
+    }
+   ],
+   "promptExamples": [],
+   "comparisons": [],
+   "requestedLocale": "en",
+   "contentLocale": "en",
+   "isFallback": false,
+   "publishedAt": "2026-11-03T05:00:56.076373Z",
+   "updatedAt": "2026-11-03T05:00:56.076373Z"
+  },
+  "description": "Starlight\u2019s upscale endpoint generates plausible surface information where a small or compressed frame is ambiguous. It accepts preset and resolution controls, with no text prompt, and preserves the shot\u2019s duration and sound.",
+  "faq": [],
+  "howTo": [],
+  "specs": [],
+  "paramNotes": {
+   "preset": "Default `precise_2_6` targets quality; `precise_2_5` targets realistic AI footage; `fast_3` prioritizes speed; `fast_2` emphasizes fidelity in faster diffusion; `mini` targets archives and severe degradation. Fast 2 costs less than the other four choices.",
+   "resolution": "`1080p` is the default among `720p`, `1080p`, `2k`, `4k`; the lower pair shares a rate and the upper pair costs more. `fast_2` returns at least 1920\u00d71080 even for `720p`, and 2560\u00d71440 for `2k`; aspect ratio is preserved.",
+   "video_url": "A 1\u201360 second MP4 link or upload is required; clips outside the duration limit are rejected before acceptance. Starlight preserves the incoming soundtrack and shot length."
+  },
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "preset": {
+     "default": "precise_2_6",
+     "description": "Which Starlight model to run. Sets the per-second rate together with resolution.",
+     "enum": [
+      "precise_2_6",
+      "precise_2_5",
+      "fast_3",
+      "fast_2",
+      "mini"
+     ],
+     "type": "string",
+     "x-ui": {
+      "affects_price": true,
+      "enum_labels": {
+       "fast_2": "Fast 2",
+       "fast_3": "Fast 3",
+       "mini": "Mini",
+       "precise_2_5": "Precise 2.5",
+       "precise_2_6": "Precise 2.6"
+      },
+      "order": 90,
+      "widget": "select"
+     }
+    },
+    "resolution": {
+     "default": "1080p",
+     "description": "Output tier; the clip's aspect ratio is kept. Sets the per-second rate.",
+     "enum": [
+      "720p",
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "type": "string",
+     "x-ui": {
+      "affects_price": true,
+      "enum_labels": {
+       "1080p": "1080p",
+       "2k": "2K",
+       "4k": "4K",
+       "720p": "720p"
+      },
+      "order": 80,
+      "widget": "radio"
+     }
+    },
+    "video_url": {
+     "contentMediaType": [
+      "video/mp4",
+      "video/webm",
+      "video/quicktime"
+     ],
+     "description": "The clip to process, 1 to 60 seconds long, as an MP4 link or upload. Length and audio are kept; clips outside that range are rejected before any charge.",
+     "minLength": 1,
+     "type": "string",
+     "x-ui": {
+      "accept": [
+       "video/mp4"
+      ],
+      "order": 100,
+      "primary": true,
+      "widget": "upload"
+     }
+    }
+   },
+   "required": [
+    "video_url"
+   ],
+   "type": "object",
+   "x-pricing": {
+    "billingMode": "duration_capped",
+    "variantFields": [
+     "preset",
+     "resolution"
+    ]
+   }
+  },
+  "priceUnit": "second",
+  "priceUnitPlural": "seconds",
+  "policyNote": "",
+  "pricingNote": "For Starlight, preset and tier determine the rate and step length applied to the incoming duration. Billing rounds upward to seconds and then whole steps, never below one step. The displayed second price is calculated as step price divided by step duration. The measured upload length or 60 seconds for a remote URL is reserved at acceptance; settlement refunds the excess, with no usage charge for failure. Fast 2 has a lower rate than the other four presets; 720p/1080p share a rate and 2K/4K share a higher one.",
+  "licenseNote": "",
+  "readme": "## Introduction\n\nStarlight is intended for recordings whose small surfaces have collapsed into blurred patches or compression. Instead of merely spreading those patches across a larger image, the model proposes a more resolved appearance. It can suit selected archive passages and compressed street footage when a generated interpretation is acceptable in the finished edit.\n\n## Key features & Highlights\n\nThe five presets cover different restoration goals: current default Precise 2.6, realism-oriented Precise 2.5 for AI material, speed-focused Fast 3, fidelity-oriented Fast 2 and Mini for difficult archives. In the cyclist trial, the reconstructed jersey folds, bicycle boundaries and building surfaces were more defined, but the rider\u2019s face was also redrawn.\n\nFour delivery tiers run from 720p through 4K. Fast 2 has a distinct minimum size, so a request using the lowest tier can still return a full-HD frame. The three-second Precise 2.6 street run at 1080p took roughly seventy-five seconds; this observation helps plan a trial but does not establish a guaranteed turnaround for other clips.\n\n## Use cases\n\nFor a city montage, choose a street shot whose movement remains useful despite heavy compression. Decide whether the newly resolved tram panels and clothing fit the surrounding footage before processing a larger collection of inserts.\n\nFor an archive sequence, distinguish an attractive reconstructed image from evidence about historical appearance. A face or sign that becomes clearer can contain generated shapes, so approval should depend on the purpose of the sequence and the importance of those details.\n\n## Prompt guide & Pro tips\n\nThere is no prompt box to direct reconstruction. Use a short moving selection with both a face and a textured background, then test `precise_2_6` at `1080p`. Try a different preset when the source or restoration goal calls for it, keeping the output tier stable so the comparison remains interpretable.\n\nReview aligned frames and uninterrupted playback before accepting the take. Pay attention to facial proportions, bicycle tubes and repeated masonry as the camera moves. Confirm returned dimensions when using Fast 2, and check sound synchronization as part of delivery. Preserve the original recording so the generated reconstruction remains distinguishable during later editorial decisions.",
+  "examples": [
+   {
+    "id": "cyclists-precise26-1080p",
+    "note": "Precise 2.6 redraws jersey folds and tram surfaces, with facial shapes that the small input cannot verify.",
+    "input": {
+     "preset": "precise_2_6",
+     "video_url": "https://cdn.spicyapi.ai/models/examples/inputs/932bf1ff63330427.mp4",
+     "resolution": "1080p"
+    },
+    "mediaKey": "models/examples/topaz-starlight/7c0ee669c28ce589.mp4",
+    "mediaUrl": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/7c0ee669c28ce589.mp4",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-starlight/f1813fde242d03aa.webp",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "durationMs": 3018,
+    "sortWeight": 100
+   }
+  ],
+  "relatedModels": [
+   "topaz/astra",
+   "topaz/video-ai",
+   "bytedance/seedvr2-video"
+  ],
+  "contentTests": [],
+  "taskTimeoutSeconds": 21600
+ },
+ "request_id": "req_06gt0qdydwzqw5zg7gqgb7b43m"
+}
