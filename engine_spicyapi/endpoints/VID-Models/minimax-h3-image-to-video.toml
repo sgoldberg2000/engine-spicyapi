@@ -22,20 +22,21 @@ label = "Resolution"
 type = "select"
 default = "768p"
 options = [
+  { value = "480p", label = "480p" },
   { value = "768p", label = "768p" },
   { value = "2k", label = "2k" },
 ]
 affects_price = true
-note = "768p or 2k, both native. Draft at 768p, deliver at 2k. 2k needs at least 5 seconds."
+note = "480p, 768p or 2k, all native. Draft at 480p or 768p, deliver at 2k. 2k needs at least 5 seconds."
 
 [params.duration_seconds]
 label = "Duration Seconds"
 type = "integer"
 default = 5
 min = 4
-max = 15
+max = 30
 affects_price = true
-note = "Whole seconds, 4 to 15. Four seconds is only available at 768p. Longer clips drift further from a supplied closing frame."
+note = "Whole seconds, 4 to 30. Longer clips drift further from a supplied closing frame."
 
 [params.enable_prompt_expansion]
 label = "Enable Prompt Expansion"

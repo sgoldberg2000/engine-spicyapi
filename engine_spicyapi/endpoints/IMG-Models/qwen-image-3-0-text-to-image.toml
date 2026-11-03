@@ -67,10 +67,9 @@ type = "select"
 default = "direct"
 options = [
   { value = "direct", label = "direct" },
-  { value = "agent", label = "agent" },
 ]
 hidden = true
-note = "How prompt expansion rewrites your brief while `enable_prompt_expansion` is on: `direct` (default) rewrites it in a single pass; `agent` runs a multi-step rewrite that plans the image more thoroughly and takes longer. Only matters while expansion is on. No effect on price."
+note = "How prompt expansion rewrites your brief while `enable_prompt_expansion` is on: a single-pass rewrite. The provider no longer accepts the former multi-step `agent` mode, so profiles that set it must move to `direct`. Only matters while expansion is on. No effect on price."
 
 [params.seed]
 label = "Seed"
