@@ -1,0 +1,30 @@
+id = "topaz-video-ai-video-edit"
+label = "Topaz Video AI · Video edit"
+category = "VID"
+platform = "spicyapi"
+endpoint = "topaz/video-ai/video-edit"
+description = "This editing endpoint applies one selected treatment per request and renders it at the chosen delivery tier. Use it to address a specific image defect or prepare an HDR version while keeping the original shot length and soundtrack."
+
+[pricing]
+base_cost = 0.004
+currency = "USD"
+note = "$0.004/image; 32 price tier(s), up to $0.605217"
+
+[general]
+kind = "video"
+prompt = "none"
+image_url_param = "video_url"
+
+[params.preset]
+label = "Preset"
+type = "select"
+default = "nyx"
+options = [{ value = "nyx", label = "nyx" }, { value = "nyx_fast", label = "nyx_fast" }, { value = "nyx_xl", label = "nyx_xl" }, { value = "nyx_high_fidelity", label = "nyx_high_fidelity" }, { value = "deblur", label = "deblur" }, { value = "hyperion_2_5", label = "hyperion_2_5" }, { value = "hyperion_2", label = "hyperion_2" }, { value = "hyperion_1", label = "hyperion_1" }]
+note = "Which pass to run: a Nyx denoising model, deblur, or a Hyperion SDR-to-HDR conversion. One pass per request; sets the per-second rate together with resolution."
+
+[params.resolution]
+label = "Resolution"
+type = "select"
+default = "1080p"
+options = [{ value = "720p", label = "720p" }, { value = "1080p", label = "1080p" }, { value = "2k", label = "2k" }, { value = "4k", label = "4k" }]
+note = "Resolution to process and return the clip at; the aspect ratio is kept. Sets the per-second rate."

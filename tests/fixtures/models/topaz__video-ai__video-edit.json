@@ -1,0 +1,758 @@
+{
+ "code": 200,
+ "msg": "success",
+ "data": {
+  "slug": "topaz/video-ai/video-edit",
+  "model": "topaz/video-ai/video-edit",
+  "family": "topaz/video-ai",
+  "familyPageSlug": "topaz-video-ai",
+  "familyDisplayName": "Topaz Video AI",
+  "displayName": "Topaz Video AI \u00b7 Denoise, Deblur & HDR",
+  "provider": "Topaz Labs",
+  "modality": "video",
+  "tasks": [
+   "video-edit"
+  ],
+  "mature": false,
+  "policyTier": "unspecified",
+  "async": true,
+  "status": "live",
+  "callable": true,
+  "sortWeight": 0,
+  "pageSlug": "topaz-video-ai-video-edit",
+  "redirectFrom": [],
+  "version": "v1",
+  "availability": "available",
+  "badges": [
+   "high_resolution"
+  ],
+  "assets": [
+   {
+    "id": "cover-main",
+    "kind": "cover",
+    "mediaKey": "models/covers/topaz-video-ai/35c22fcd9028f8f3.webp",
+    "url": "https://cdn.spicyapi.ai/models/covers/topaz-video-ai/35c22fcd9028f8f3.webp",
+    "mimeType": "image/webp",
+    "width": 1672,
+    "height": 941,
+    "sortWeight": 0
+   },
+   {
+    "id": "feature-proteus",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/02c7f3758a20779a.webp",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/02c7f3758a20779a.webp",
+    "mimeType": "image/webp",
+    "width": 1600,
+    "height": 600,
+    "sortWeight": 150
+   },
+   {
+    "id": "feature-podcast",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/54b234e1af879b78.webp",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/54b234e1af879b78.webp",
+    "mimeType": "image/webp",
+    "width": 1600,
+    "height": 600,
+    "sortWeight": 250
+   },
+   {
+    "id": "feature-nyx",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/005da6a0944d8e86.webp",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/005da6a0944d8e86.webp",
+    "mimeType": "image/webp",
+    "width": 1600,
+    "height": 600,
+    "sortWeight": 350
+   },
+   {
+    "id": "feature-deblur",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/cb4f8420a59b9081.webp",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/cb4f8420a59b9081.webp",
+    "mimeType": "image/webp",
+    "width": 1600,
+    "height": 600,
+    "sortWeight": 450
+   },
+   {
+    "id": "example-podcast-proteus-1080p",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/d3f5096c9b102e8c.mp4",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/d3f5096c9b102e8c.mp4",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "posterMediaKey": "models/examples/topaz-video-ai/6836d0a37b1d34ca.webp",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/6836d0a37b1d34ca.webp",
+    "sortWeight": 0,
+    "durationMs": 5024
+   },
+   {
+    "id": "example-cyclists-proteus-1080p",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/90e22c480549d304.mp4",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/90e22c480549d304.mp4",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "posterMediaKey": "models/examples/topaz-video-ai/35d57f96de9e2dfa.webp",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/35d57f96de9e2dfa.webp",
+    "sortWeight": 0,
+    "durationMs": 3018
+   },
+   {
+    "id": "example-cellar-nyx-1080p",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/47046e974b9d3dfb.mp4",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/47046e974b9d3dfb.mp4",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "posterMediaKey": "models/examples/topaz-video-ai/58d78739bbf546fc.webp",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/58d78739bbf546fc.webp",
+    "sortWeight": 0,
+    "durationMs": 4010
+   },
+   {
+    "id": "example-cyclists-hyperion25-1080p",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/20949a7dd93af6d4.mp4",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/20949a7dd93af6d4.mp4",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "posterMediaKey": "models/examples/topaz-video-ai/a1ea738d8d319c5c.webp",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/a1ea738d8d319c5c.webp",
+    "sortWeight": 0,
+    "durationMs": 3018
+   },
+   {
+    "id": "example-dancer-chronos-slowmo2-1080p",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-video-ai/5d43fce387ab8b0d.mp4",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/5d43fce387ab8b0d.mp4",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "posterMediaKey": "models/examples/topaz-video-ai/d7af793bf2674514.webp",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/d7af793bf2674514.webp",
+    "sortWeight": 0,
+    "durationMs": 9950
+   }
+  ],
+  "summary": "Treat grain, soft focus or SDR-to-HDR conversion with one of eight dedicated processing choices.",
+  "seoTitle": "Topaz Video AI API \u2014 Denoise, Deblur & HDR with Nyx & Hyperion",
+  "seoDescription": "Topaz Video AI repairs 1\u201360 second MP4 clips with 8 Nyx, deblur and Hyperion presets, delivering noise reduction or 10-bit HDR from 720p to 4K.",
+  "price": {
+   "amount": "0.004",
+   "unit": "per_second",
+   "variant": "preset=nyx_fast;resolution=720p",
+   "tiers": 32,
+   "variants": [
+    {
+     "variant": "preset=nyx_fast;resolution=720p",
+     "amount": "0.004",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=deblur;resolution=720p",
+     "amount": "0.007058823529",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_1;resolution=720p",
+     "amount": "0.007058823529",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx;resolution=720p",
+     "amount": "0.007058823529",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_high_fidelity;resolution=1080p",
+     "amount": "0.007058823529",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_high_fidelity;resolution=720p",
+     "amount": "0.007058823529",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_xl;resolution=720p",
+     "amount": "0.007058823529",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_fast;resolution=1080p",
+     "amount": "0.008",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_fast;resolution=2k",
+     "amount": "0.014",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=deblur;resolution=1080p",
+     "amount": "0.014634146341",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_1;resolution=1080p",
+     "amount": "0.014634146341",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx;resolution=1080p",
+     "amount": "0.014634146341",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_xl;resolution=1080p",
+     "amount": "0.014634146341",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=deblur;resolution=2k",
+     "amount": "0.026",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_1;resolution=2k",
+     "amount": "0.026",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx;resolution=2k",
+     "amount": "0.026",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_xl;resolution=2k",
+     "amount": "0.026",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_high_fidelity;resolution=2k",
+     "amount": "0.028",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_high_fidelity;resolution=4k",
+     "amount": "0.028",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_fast;resolution=4k",
+     "amount": "0.031304347826",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=deblur;resolution=4k",
+     "amount": "0.058536585366",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_1;resolution=4k",
+     "amount": "0.058536585366",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx;resolution=4k",
+     "amount": "0.058536585366",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=nyx_xl;resolution=4k",
+     "amount": "0.058536585366",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_2;resolution=1080p",
+     "amount": "0.27652173913",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_2;resolution=720p",
+     "amount": "0.27652173913",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_2_5;resolution=1080p",
+     "amount": "0.27652173913",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_2_5;resolution=720p",
+     "amount": "0.27652173913",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_2;resolution=2k",
+     "amount": "0.605217391304",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_2;resolution=4k",
+     "amount": "0.605217391304",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_2_5;resolution=2k",
+     "amount": "0.605217391304",
+     "unit": "per_second"
+    },
+    {
+     "variant": "preset=hyperion_2_5;resolution=4k",
+     "amount": "0.605217391304",
+     "unit": "per_second"
+    }
+   ]
+  },
+  "requestedLocale": "en",
+  "contentLocale": "en",
+  "isFallback": false,
+  "updatedAt": "2026-11-03T05:00:56.076373Z",
+  "publishedAt": "2026-11-03T05:00:56.076373Z",
+  "familyContent": {
+   "family": "topaz/video-ai",
+   "summary": "Topaz Video AI brings Topaz Labs\u2019 video enhancement models into three focused tools: upscale footage, remove noise or blur and convert SDR to HDR, or create intermediate frames for smooth playback and slow motion. Choose the tool for the problem in your clip, then select its model and delivery tier.",
+   "introductionHtml": "",
+   "seoTitle": "Topaz Video AI API \u2014 Upscale, Repair, HDR & Slow Motion",
+   "seoDescription": "Topaz Video AI offers 21 upscale models, 8 noise, blur and HDR treatments, plus up to 8\u00d7 slow motion and 4K output for 1\u201360 second MP4 clips.",
+   "faq": [
+    {
+     "question": "How is usage calculated?",
+     "answer": "Topaz Video AI charges for source duration, first rounded up to whole seconds and then to whole billing steps. The chosen model and output tier set the step length; interpolation also depends on frame rate and slow-motion factor. Even a short clip consumes at least one step. The displayed per-second rate is the step price divided by its length. Acceptance holds the measured upload duration or the maximum linked-clip duration; unused funds return after actual usage is known, and failed jobs incur no charge. Within Topaz Video AI enlargement, the presets share a rate at a given tier except `gaia_2_animation`, which has its own pricing. Higher tiers cost more. Nyx Fast is priced below Nyx, and Hyperion 1 below Hyperion 2.5. Higher interpolation frame rates and slowing factors increase the work; Aion has the highest interpolation rate."
+    },
+    {
+     "question": "What happens to the audio?",
+     "answer": "Enhancement and ordinary frame-rate conversion keep the sound; the tested slowed clips omit it, so a slow-motion edit needs its own audio treatment."
+    },
+    {
+     "question": "How do I choose the settings?",
+     "answer": "Use Proteus for a general enlargement trial, Nyx for grain or Apollo for retiming; specialize only after inspecting the defect in the source."
+    }
+   ],
+   "howTo": [
+    {
+     "title": "Prepare a short take",
+     "body": "Identify whether the shot needs more pixels, cleaner texture or a change in playback speed."
+    },
+    {
+     "title": "Choose the treatment",
+     "body": "Select the relevant endpoint before choosing a model; the three tools solve different problems."
+    },
+    {
+     "title": "Review before delivery",
+     "body": "Download the processed take and check moving edges, facial detail and audio against your delivery requirements."
+    }
+   ],
+   "specs": [],
+   "coverMediaKey": "models/covers/topaz-video-ai/35c22fcd9028f8f3.webp",
+   "coverUrl": "https://cdn.spicyapi.ai/models/covers/topaz-video-ai/35c22fcd9028f8f3.webp",
+   "coverAlt": "Concept cover for Topaz Video AI: a film ribbon passes through precision optical lenses in a black gallery with gold light trails; this is artwork, not a processing result.",
+   "eyebrow": "TOPAZ VIDEO AI API",
+   "tagline": "Enlarge the picture, clean the noise, or slow the movement.",
+   "highlights": [
+    {
+     "value": "21",
+     "label": "Enlargement models",
+     "note": "Match faces, animation, interlacing or compression to a dedicated preset."
+    },
+    {
+     "value": "8",
+     "label": "Repair choices",
+     "note": "Select one of four Nyx treatments, deblur or three Hyperion HDR conversions."
+    },
+    {
+     "value": "\u00d78",
+     "label": "Slower movement",
+     "note": "Extend action with generated frames while choosing a separate delivery frame rate."
+    }
+   ],
+   "features": [
+    {
+     "eyebrow": "Purpose-built models",
+     "title": "Proteus",
+     "body": "Matched cyclist crops: source left, Proteus 1080p right, with cleaner contours and some blocky patches remaining.",
+     "assetId": "feature-proteus",
+     "variant": "split"
+    },
+    {
+     "eyebrow": "Inspect the result",
+     "title": "Proteus \u00b7 1080p",
+     "body": "Podcast frame: source left and Proteus 1080p right, showing the speaker and microphone at the same instant.",
+     "assetId": "feature-podcast",
+     "variant": "stacked"
+    },
+    {
+     "eyebrow": "Purpose-built models",
+     "title": "Nyx \u00b7 1080p",
+     "body": "Matched cellar crops: artificially noised source left, Nyx 1080p right. Grain is much lower, hair clumps remain visible and background barrel texture is softened.",
+     "assetId": "feature-nyx",
+     "variant": "split"
+    },
+    {
+     "eyebrow": "Inspect the result",
+     "title": "Deblur \u00b7 1080p",
+     "body": "Blurred dancer on the left and deblur 1080p on the right at the same time; the face remains soft.",
+     "assetId": "feature-deblur",
+     "variant": "stacked"
+    }
+   ],
+   "useCases": [
+    {
+     "title": "Put the clip to work",
+     "body": "Prepare an old phone recording or an interview excerpt for a larger edit. Pick an enlargement preset suited to the source, then check skin, hair and compression marks before using the result in the final timeline."
+    },
+    {
+     "title": "Inspect the result",
+     "body": "Work on a dim interior, a blurred dance shot or a movement study with the matching tool. Keep noise treatment, HDR conversion and slow motion as deliberate choices so you can assess each result against its source."
+    }
+   ],
+   "limits": [
+    {
+     "scope": "upscale",
+     "body": "Enlargement can leave compressed patches visible; a higher tier does not certify recovered source detail, and the two fixed-2\u00d7 presets need a dimension check."
+    },
+    {
+     "scope": "video-edit",
+     "body": "Denoise, Deblur & HDR processes the clip at the requested resolution. Start with `nyx` for natural-looking noise treatment, or choose `deblur` for softness. Hyperion outputs HEVC (H.265), 10-bit HDR; browser previews may fail, so review the download in an HDR-capable player or editor. Other presets output H.264. The tested Hyperion 2.5 file is tagged PQ (`smpte2084`), while the Hyperion 1 sample is tagged HLG (`arib-std-b67`); check the returned file\u2019s HDR metadata in your player or editor."
+    },
+    {
+     "scope": "frame-interpolation",
+     "body": "Input is read at 30 fps for frame interpolation. With `slow_motion` above `1`, duration increases and the tested output has no audio; ordinary enhancement and frame conversion without slowing retain the soundtrack."
+    }
+   ],
+   "closing": "Trim to a useful passage of 1\u201360 seconds and send its MP4 through `video_url`. Start with `1080p` and the default preset for the chosen tool, keeping an untouched copy for review. A higher delivery tier cannot guarantee recovery of detail missing from the recording. Watch the full clip after processing, especially hands in motion and edges against busy backgrounds. For HDR, download the file to a compatible player or editor. For slow motion, plan a separate sound edit because the tested slowed outputs contain no audio track.",
+   "assetNotes": {
+    "cover-main": {
+     "alt": "Film loops threaded through glass optics under gold lighting, a conceptual cover for video enhancement.",
+     "caption": ""
+    },
+    "example-cellar-nyx-1080p": {
+     "alt": "Two people in a wine cellar after Nyx noise reduction at 1920\u00d71080, retaining the original audio.",
+     "caption": ""
+    },
+    "example-cyclists-hyperion25-1080p": {
+     "alt": "Cyclists and a passing tram in Hyperion 2.5 HDR at 1920\u00d71080, encoded as 10-bit HEVC with PQ metadata.",
+     "caption": ""
+    },
+    "example-cyclists-proteus-1080p": {
+     "alt": "Cyclists riding through a city street in the Proteus 1920\u00d71080 result, with some compression patches still present.",
+     "caption": ""
+    },
+    "example-dancer-chronos-slowmo2-1080p": {
+     "alt": "A dancer moving at half speed in a 1920\u00d71080 Chronos result, 60 fps, about 9.95 seconds and no audio track.",
+     "caption": ""
+    },
+    "example-podcast-proteus-1080p": {
+     "alt": "A podcast speaker beside a microphone, enlarged by Proteus to 1920\u00d71080 at 24 fps with sound retained.",
+     "caption": ""
+    },
+    "feature-deblur": {
+     "alt": "A dancer shown before and after 1080p deblur processing, with softness still visible in the face.",
+     "caption": ""
+    },
+    "feature-nyx": {
+     "alt": "Two people among wine barrels, with noisy input and a 1080p Nyx crop showing reduced grain.",
+     "caption": ""
+    },
+    "feature-podcast": {
+     "alt": "A seated podcast speaker and microphone in a side-by-side source and Proteus enlargement.",
+     "caption": ""
+    },
+    "feature-proteus": {
+     "alt": "Cyclists enlarged to 1080p by Proteus beside a matching crop of the compressed street recording.",
+     "caption": ""
+    }
+   },
+   "layout": "editorial",
+   "assets": [
+    {
+     "id": "feature-deblur",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/cb4f8420a59b9081.webp",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/cb4f8420a59b9081.webp",
+     "mimeType": "image/webp",
+     "width": 1600,
+     "height": 600,
+     "sortWeight": 450,
+     "alt": "A dancer shown before and after 1080p deblur processing, with softness still visible in the face."
+    },
+    {
+     "id": "feature-nyx",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/005da6a0944d8e86.webp",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/005da6a0944d8e86.webp",
+     "mimeType": "image/webp",
+     "width": 1600,
+     "height": 600,
+     "sortWeight": 350,
+     "alt": "Two people among wine barrels, with noisy input and a 1080p Nyx crop showing reduced grain."
+    },
+    {
+     "id": "feature-podcast",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/54b234e1af879b78.webp",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/54b234e1af879b78.webp",
+     "mimeType": "image/webp",
+     "width": 1600,
+     "height": 600,
+     "sortWeight": 250,
+     "alt": "A seated podcast speaker and microphone in a side-by-side source and Proteus enlargement."
+    },
+    {
+     "id": "feature-proteus",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/02c7f3758a20779a.webp",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/02c7f3758a20779a.webp",
+     "mimeType": "image/webp",
+     "width": 1600,
+     "height": 600,
+     "sortWeight": 150,
+     "alt": "Cyclists enlarged to 1080p by Proteus beside a matching crop of the compressed street recording."
+    },
+    {
+     "id": "cover-main",
+     "kind": "cover",
+     "mediaKey": "models/covers/topaz-video-ai/35c22fcd9028f8f3.webp",
+     "url": "https://cdn.spicyapi.ai/models/covers/topaz-video-ai/35c22fcd9028f8f3.webp",
+     "mimeType": "image/webp",
+     "width": 1672,
+     "height": 941,
+     "sortWeight": 0,
+     "alt": "Film loops threaded through glass optics under gold lighting, a conceptual cover for video enhancement."
+    },
+    {
+     "id": "example-cellar-nyx-1080p",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/47046e974b9d3dfb.mp4",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/47046e974b9d3dfb.mp4",
+     "mimeType": "video/mp4",
+     "width": 1920,
+     "height": 1080,
+     "posterMediaKey": "models/examples/topaz-video-ai/58d78739bbf546fc.webp",
+     "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/58d78739bbf546fc.webp",
+     "sortWeight": 0,
+     "durationMs": 4010,
+     "alt": "Two people in a wine cellar after Nyx noise reduction at 1920\u00d71080, retaining the original audio."
+    },
+    {
+     "id": "example-cyclists-hyperion25-1080p",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/20949a7dd93af6d4.mp4",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/20949a7dd93af6d4.mp4",
+     "mimeType": "video/mp4",
+     "width": 1920,
+     "height": 1080,
+     "posterMediaKey": "models/examples/topaz-video-ai/a1ea738d8d319c5c.webp",
+     "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/a1ea738d8d319c5c.webp",
+     "sortWeight": 0,
+     "durationMs": 3018,
+     "alt": "Cyclists and a passing tram in Hyperion 2.5 HDR at 1920\u00d71080, encoded as 10-bit HEVC with PQ metadata."
+    },
+    {
+     "id": "example-cyclists-proteus-1080p",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/90e22c480549d304.mp4",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/90e22c480549d304.mp4",
+     "mimeType": "video/mp4",
+     "width": 1920,
+     "height": 1080,
+     "posterMediaKey": "models/examples/topaz-video-ai/35d57f96de9e2dfa.webp",
+     "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/35d57f96de9e2dfa.webp",
+     "sortWeight": 0,
+     "durationMs": 3018,
+     "alt": "Cyclists riding through a city street in the Proteus 1920\u00d71080 result, with some compression patches still present."
+    },
+    {
+     "id": "example-dancer-chronos-slowmo2-1080p",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/5d43fce387ab8b0d.mp4",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/5d43fce387ab8b0d.mp4",
+     "mimeType": "video/mp4",
+     "width": 1920,
+     "height": 1080,
+     "posterMediaKey": "models/examples/topaz-video-ai/d7af793bf2674514.webp",
+     "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/d7af793bf2674514.webp",
+     "sortWeight": 0,
+     "durationMs": 9950,
+     "alt": "A dancer moving at half speed in a 1920\u00d71080 Chronos result, 60 fps, about 9.95 seconds and no audio track."
+    },
+    {
+     "id": "example-podcast-proteus-1080p",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-video-ai/d3f5096c9b102e8c.mp4",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/d3f5096c9b102e8c.mp4",
+     "mimeType": "video/mp4",
+     "width": 1920,
+     "height": 1080,
+     "posterMediaKey": "models/examples/topaz-video-ai/6836d0a37b1d34ca.webp",
+     "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/6836d0a37b1d34ca.webp",
+     "sortWeight": 0,
+     "durationMs": 5024,
+     "alt": "A podcast speaker beside a microphone, enlarged by Proteus to 1920\u00d71080 at 24 fps with sound retained."
+    }
+   ],
+   "promptExamples": [],
+   "comparisons": [],
+   "requestedLocale": "en",
+   "contentLocale": "en",
+   "isFallback": false,
+   "publishedAt": "2026-11-03T05:00:56.076373Z",
+   "updatedAt": "2026-11-03T05:00:56.076373Z"
+  },
+  "description": "This editing endpoint applies one selected treatment per request and renders it at the chosen delivery tier. Use it to address a specific image defect or prepare an HDR version while keeping the original shot length and soundtrack.",
+  "faq": [],
+  "howTo": [],
+  "specs": [],
+  "paramNotes": {
+   "preset": "- `nyx` \u2014 natural texture, default\n- `nyx_fast` \u2014 fast batch processing\n- `nyx_xl` \u2014 very heavy noise\n- `nyx_high_fidelity` \u2014 fine noise treatment\n- `deblur` \u2014 blur reduction\n- `hyperion_2_5` \u2014 highest-quality HDR conversion\n- `hyperion_2` \u2014 HDR conversion\n- `hyperion_1` \u2014 early HDR option\n\nDefault treatment: `nyx`; one preset per request. Nyx Fast is less expensive than Nyx; Hyperion 1 costs less than Hyperion 2.5.",
+   "resolution": "Processing and output use `720p`, `1080p` (default), `2k` or `4k`, with unchanged aspect ratio; the treatment-tier combination determines cost.",
+   "video_url": "Supply an MP4 lasting 1\u201360 seconds by link or upload. A duration outside that interval is refused before processing is accepted; this treatment keeps both runtime and soundtrack."
+  },
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "preset": {
+     "default": "nyx",
+     "description": "Which pass to run: a Nyx denoising model, deblur, or a Hyperion SDR-to-HDR conversion. One pass per request; sets the per-second rate together with resolution.",
+     "enum": [
+      "nyx",
+      "nyx_fast",
+      "nyx_xl",
+      "nyx_high_fidelity",
+      "deblur",
+      "hyperion_2_5",
+      "hyperion_2",
+      "hyperion_1"
+     ],
+     "type": "string",
+     "x-ui": {
+      "affects_price": true,
+      "enum_labels": {
+       "deblur": "Deblur",
+       "hyperion_1": "Hyperion 1 (SDR to HDR)",
+       "hyperion_2": "Hyperion 2 (SDR to HDR)",
+       "hyperion_2_5": "Hyperion 2.5 (SDR to HDR)",
+       "nyx": "Nyx (denoise)",
+       "nyx_fast": "Nyx Fast (denoise)",
+       "nyx_high_fidelity": "Nyx High Fidelity (denoise)",
+       "nyx_xl": "Nyx XL (denoise)"
+      },
+      "order": 90,
+      "widget": "select"
+     }
+    },
+    "resolution": {
+     "default": "1080p",
+     "description": "Resolution to process and return the clip at; the aspect ratio is kept. Sets the per-second rate.",
+     "enum": [
+      "720p",
+      "1080p",
+      "2k",
+      "4k"
+     ],
+     "type": "string",
+     "x-ui": {
+      "affects_price": true,
+      "enum_labels": {
+       "1080p": "1080p",
+       "2k": "2K",
+       "4k": "4K",
+       "720p": "720p"
+      },
+      "order": 80,
+      "widget": "radio"
+     }
+    },
+    "video_url": {
+     "contentMediaType": [
+      "video/mp4",
+      "video/webm",
+      "video/quicktime"
+     ],
+     "description": "The clip to process, 1 to 60 seconds long, as an MP4 link or upload. Length and audio are kept; clips outside that range are rejected before any charge.",
+     "minLength": 1,
+     "type": "string",
+     "x-ui": {
+      "accept": [
+       "video/mp4"
+      ],
+      "order": 100,
+      "primary": true,
+      "widget": "upload"
+     }
+    }
+   },
+   "required": [
+    "video_url"
+   ],
+   "type": "object",
+   "x-pricing": {
+    "billingMode": "duration_capped",
+    "variantFields": [
+     "preset",
+     "resolution"
+    ]
+   }
+  },
+  "priceUnit": "second",
+  "priceUnitPlural": "seconds",
+  "policyNote": "",
+  "pricingNote": "Editing is metered by source seconds, with treatment and resolution setting the billing step and rate. Round duration upward to seconds before rounding to steps; even a tiny accepted clip uses a full step. The shown per-second price is the step charge divided by its duration. A hold covers the measured upload or 60 seconds for an external link, followed by a refund of unused funds after processing; unsuccessful edits are uncharged. Nyx Fast costs less than Nyx, and Hyperion 1 less than Hyperion 2.5.",
+  "licenseNote": "",
+  "readme": "## Introduction\n\nThe repair tool addresses a picture that is already the right shot but has distracting grain, softened edges or a need for HDR delivery. It suits night interiors, a soft performance take and SDR footage entering an HDR edit. Each request selects a single operation, which makes its visual effect easier to assess.\n\n## Key features & Highlights\n\nFour Nyx variants handle different noise demands: natural texture, faster batch work, very heavy noise and finer treatment. The cellar test reduced conspicuous grain while leaving groups of hair discernible; the wood behind the subjects also became smoother. This is a balance between cleanup and the small texture that makes a surface convincing.\n\nThe remaining choices are deblur and three Hyperion versions. Deblur produced a restrained improvement on the dancer, whose face still looked soft. Hyperion returns ten-bit HEVC instead of the H.264 used by other treatments. The inspected 2.5 sample carries PQ metadata, whereas the inspected Hyperion 1 sample carries HLG metadata, so verify the actual file rather than assuming one transfer curve.\n\n## Use cases\n\nFor a low-light conversation, inspect shadow noise and the face together before accepting a cleanup pass. A quiet background is useful only if the person still looks suitable alongside the other shots in the sequence.\n\nFor an HDR master, create a Hyperion version of the selected SDR take and review it inside the intended HDR workflow. A browser that cannot play the file is insufficient evidence about its brightness or color rendering.\n\n## Prompt guide & Pro tips\n\nThis endpoint takes presets rather than written prompts. Identify the dominant problem first: noisy shadows suggest Nyx, softness suggests deblur, and a delivery requirement may call for Hyperion. Select one representative passage containing both difficult texture and a human subject, then hold the resolution steady while assessing the treatment.\n\nAfter downloading, compare the same moments at equal display size and replay motion around hair, hands and bright edges. Inspect codec, bit depth and HDR metadata when converting dynamic range, and judge the result on compatible equipment. Avoid describing a softened face as recovered focus simply because its outline becomes easier to see.",
+  "examples": [
+   {
+    "id": "cellar-nyx-1080p",
+    "note": "The Nyx run suppresses much of the added grain but also smooths the barrel texture.",
+    "input": {
+     "preset": "nyx",
+     "video_url": "https://cdn.spicyapi.ai/models/examples/inputs/e26bdf74d7df5fee.mp4",
+     "resolution": "1080p"
+    },
+    "mediaKey": "models/examples/topaz-video-ai/47046e974b9d3dfb.mp4",
+    "mediaUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/47046e974b9d3dfb.mp4",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/58d78739bbf546fc.webp",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "durationMs": 4010,
+    "sortWeight": 100
+   },
+   {
+    "id": "cyclists-hyperion25-1080p",
+    "note": "This completed Hyperion 2.5 example is tagged PQ; its HDR preview requires compatible decoding.",
+    "input": {
+     "preset": "hyperion_2_5",
+     "video_url": "https://cdn.spicyapi.ai/models/examples/inputs/4bcc8b8f2ca8d70d.mp4",
+     "resolution": "1080p"
+    },
+    "mediaKey": "models/examples/topaz-video-ai/20949a7dd93af6d4.mp4",
+    "mediaUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/20949a7dd93af6d4.mp4",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-video-ai/a1ea738d8d319c5c.webp",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "durationMs": 3018,
+    "sortWeight": 200
+   }
+  ],
+  "relatedModels": [
+   "topaz/starlight",
+   "topaz/astra",
+   "spicyapi/video-upscaler-v1"
+  ],
+  "contentTests": [],
+  "taskTimeoutSeconds": 21600
+ },
+ "request_id": "req_06gt0qdwyb06k1aezx4ptm2sf8"
+}

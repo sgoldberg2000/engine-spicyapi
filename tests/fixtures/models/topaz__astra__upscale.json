@@ -1,0 +1,396 @@
+{
+ "code": 200,
+ "msg": "success",
+ "data": {
+  "slug": "topaz/astra/upscale",
+  "model": "topaz/astra/upscale",
+  "family": "topaz/astra",
+  "familyPageSlug": "topaz-astra",
+  "familyDisplayName": "Topaz Astra",
+  "displayName": "Topaz Astra \u00b7 Creative Upscale",
+  "provider": "Topaz Labs",
+  "modality": "video",
+  "tasks": [
+   "upscale"
+  ],
+  "mature": false,
+  "policyTier": "unspecified",
+  "async": true,
+  "status": "live",
+  "callable": true,
+  "sortWeight": 0,
+  "pageSlug": "topaz-astra-upscale",
+  "redirectFrom": [],
+  "version": "v1",
+  "availability": "available",
+  "badges": [
+   "high_resolution"
+  ],
+  "assets": [
+   {
+    "id": "cover-main",
+    "kind": "cover",
+    "mediaKey": "models/covers/topaz-astra/d844958098d91eef.webp",
+    "url": "https://cdn.spicyapi.ai/models/covers/topaz-astra/d844958098d91eef.webp",
+    "mimeType": "image/webp",
+    "width": 1672,
+    "height": 941,
+    "sortWeight": 0
+   },
+   {
+    "id": "feature-cellar",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-astra/5df46b8d1a3d988c.webp",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-astra/5df46b8d1a3d988c.webp",
+    "mimeType": "image/webp",
+    "width": 1600,
+    "height": 600,
+    "sortWeight": 150
+   },
+   {
+    "id": "feature-face",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-astra/c3280a86b0ec044e.webp",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-astra/c3280a86b0ec044e.webp",
+    "mimeType": "image/webp",
+    "width": 1600,
+    "height": 600,
+    "sortWeight": 250
+   },
+   {
+    "id": "example-cellar-low-unprompted-1080p",
+    "kind": "feature",
+    "mediaKey": "models/examples/topaz-astra/fa7567687c92acad.mp4",
+    "url": "https://cdn.spicyapi.ai/models/examples/topaz-astra/fa7567687c92acad.mp4",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "posterMediaKey": "models/examples/topaz-astra/fe34d631574bade1.webp",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-astra/fe34d631574bade1.webp",
+    "sortWeight": 0,
+    "durationMs": 3008
+   }
+  ],
+  "summary": "Guide creative enlargement with an optional scene description and three levels of visual freedom.",
+  "seoTitle": "Topaz Astra API \u2014 Prompted Creative Upscale",
+  "seoDescription": "Topaz Astra upscales 1\u201360 second MP4 clips to 720p, 1080p or 4K, using optional text and low, medium or high creativity to invent finer detail.",
+  "price": {
+   "amount": "0.36",
+   "unit": "per_second",
+   "variant": "1080p",
+   "tiers": 3,
+   "variants": [
+    {
+     "variant": "1080p",
+     "amount": "0.36",
+     "unit": "per_second"
+    },
+    {
+     "variant": "720p",
+     "amount": "0.36",
+     "unit": "per_second"
+    },
+    {
+     "variant": "4k",
+     "amount": "0.6",
+     "unit": "per_second"
+    }
+   ]
+  },
+  "requestedLocale": "en",
+  "contentLocale": "en",
+  "isFallback": false,
+  "updatedAt": "2026-11-03T05:00:56.076373Z",
+  "publishedAt": "2026-11-03T05:00:56.076373Z",
+  "familyContent": {
+   "family": "topaz/astra",
+   "summary": "Topaz Astra enlarges a clip while inventing additional visual detail. An optional description and a creativity setting guide the finish, making it useful for AI video and stylized material where a reinterpretation is welcome. Treat the output as a creative version of the shot: added strands of hair, fabric texture or facial detail may never have existed in the input.",
+   "introductionHtml": "",
+   "seoTitle": "Topaz Astra API \u2014 Creative Video to 4K",
+   "seoDescription": "Topaz Astra adds creative detail to 1\u201360 second MP4 videos with optional prompts, 3 creativity levels and 720p, 1080p or 4K output with audio.",
+   "faq": [
+    {
+     "question": "How is usage calculated?",
+     "answer": "Astra billing counts the submitted source clip, rounding its length up to whole seconds before rounding again to the selected tier\u2019s billing step. Every request uses at least one step; creativity has no pricing effect. The per-second figure displayed is a step\u2019s price divided by its length. The initial hold uses the known upload length or the maximum duration for a URL, and settlement releases any over-reserved amount. A failed Astra request is free of usage charges. Astra charges the same rate for 720p and 1080p, with a higher rate for 4K. Choosing low, medium or high creativity changes the visual freedom without changing that rate."
+    },
+    {
+     "question": "What happens to the audio?",
+     "answer": "Astra keeps the original soundtrack synchronized with the shot; creative enlargement leaves the running time intact."
+    },
+    {
+     "question": "How do I choose the settings?",
+     "answer": "Begin without a prompt to see the source-led interpretation; use medium or high only when greater visual freedom serves the project."
+    }
+   ],
+   "howTo": [
+    {
+     "title": "Prepare a short take",
+     "body": "Choose a shot whose visual treatment can accommodate new details."
+    },
+    {
+     "title": "Choose the treatment",
+     "body": "Establish a low-creativity baseline, then add a brief description if a particular finish is needed."
+    },
+    {
+     "title": "Review before delivery",
+     "body": "Review the subject\u2019s appearance through the entire movement before accepting the creative version."
+    }
+   ],
+   "specs": [],
+   "coverMediaKey": "models/covers/topaz-astra/d844958098d91eef.webp",
+   "coverUrl": "https://cdn.spicyapi.ai/models/covers/topaz-astra/d844958098d91eef.webp",
+   "coverAlt": "Creative concept art for Topaz Astra: glowing gold filigree and crystalline branches emerge from sculptural film frames inside a black gallery; not an Astra sample output.",
+   "eyebrow": "TOPAZ ASTRA API",
+   "tagline": "Let a small video grow a richer visual world.",
+   "highlights": [
+    {
+     "value": "3",
+     "label": "Creative settings",
+     "note": "Low, medium and high control how freely the picture is reinterpreted."
+    },
+    {
+     "value": "4K",
+     "label": "Creative delivery size",
+     "note": "Choose 720p, 1080p or 4K for a newly detailed version of the shot."
+    },
+    {
+     "value": "~210 S",
+     "label": "Observed turnaround",
+     "note": "The three-second cellar scene needed roughly 210 seconds at 1080p in the recorded trial."
+    }
+   ],
+   "features": [
+    {
+     "eyebrow": "Purpose-built models",
+     "title": "Astra \u00b7 low",
+     "body": "Cellar frame: 360p source left and Astra low 1080p right, with new hair texture, glass edges and reinterpreted faces.",
+     "assetId": "feature-cellar",
+     "variant": "split"
+    },
+    {
+     "eyebrow": "Inspect the result",
+     "title": "Astra \u00b7 1080p",
+     "body": "Later cellar crop: source left, unprompted Astra low right, with added hair strands and changed profile detail.",
+     "assetId": "feature-face",
+     "variant": "stacked"
+    }
+   ],
+   "useCases": [
+    {
+     "title": "Put the clip to work",
+     "body": "Finish a selected AI-generated interior shot with richer hair, cloth and background surfaces. Compare an unprompted low-creativity pass with your intended art direction before committing the take to a campaign or a short film."
+    },
+    {
+     "title": "Inspect the result",
+     "body": "Explore a stylized reinterpretation of ordinary footage when exact reconstruction is unnecessary. Review faces and objects across the sequence, since creative detail can change their appearance even at the lowest setting."
+    }
+   ],
+   "limits": [
+    {
+     "scope": "upscale",
+     "body": "Astra synthesizes detail rather than documenting what the camera captured. Faces can shift even with `low`, and high creativity allows more reinterpretation; the resolution menu does not include `2k`."
+    }
+   ],
+   "closing": "Send a 1\u201360 second MP4 and begin with `creativity_level` set to `low`. Describe visible materials, lighting and the finish you want in a short prompt; avoid a long list of unrelated objects that competes with the existing composition. Check the no-prompt result before adding instructions, then change only the description or creativity in a follow-up trial. Download the complete video and examine facial identity and moving textures. A short 720p portrait took roughly two and a half minutes in our test; larger jobs need patience.",
+   "assetNotes": {
+    "cover-main": {
+     "alt": "Gold crystalline branches growing from sculptural film frames against a black exhibition space.",
+     "caption": ""
+    },
+    "example-cellar-low-unprompted-1080p": {
+     "alt": "Two people in a wine cellar in Astra\u2019s 1920\u00d71080 MP4, using low creativity without a prompt and retaining the soundtrack.",
+     "caption": ""
+    },
+    "feature-cellar": {
+     "alt": "Wine-cellar subjects shown as a 360p input and an Astra 1080p interpretation with richer hair and glass edges.",
+     "caption": ""
+    },
+    "feature-face": {
+     "alt": "A close view of a woman\u2019s profile in the cellar, comparing the source with newly interpreted facial texture.",
+     "caption": ""
+    }
+   },
+   "layout": "editorial",
+   "assets": [
+    {
+     "id": "feature-face",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-astra/c3280a86b0ec044e.webp",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-astra/c3280a86b0ec044e.webp",
+     "mimeType": "image/webp",
+     "width": 1600,
+     "height": 600,
+     "sortWeight": 250,
+     "alt": "A close view of a woman\u2019s profile in the cellar, comparing the source with newly interpreted facial texture."
+    },
+    {
+     "id": "feature-cellar",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-astra/5df46b8d1a3d988c.webp",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-astra/5df46b8d1a3d988c.webp",
+     "mimeType": "image/webp",
+     "width": 1600,
+     "height": 600,
+     "sortWeight": 150,
+     "alt": "Wine-cellar subjects shown as a 360p input and an Astra 1080p interpretation with richer hair and glass edges."
+    },
+    {
+     "id": "cover-main",
+     "kind": "cover",
+     "mediaKey": "models/covers/topaz-astra/d844958098d91eef.webp",
+     "url": "https://cdn.spicyapi.ai/models/covers/topaz-astra/d844958098d91eef.webp",
+     "mimeType": "image/webp",
+     "width": 1672,
+     "height": 941,
+     "sortWeight": 0,
+     "alt": "Gold crystalline branches growing from sculptural film frames against a black exhibition space."
+    },
+    {
+     "id": "example-cellar-low-unprompted-1080p",
+     "kind": "feature",
+     "mediaKey": "models/examples/topaz-astra/fa7567687c92acad.mp4",
+     "url": "https://cdn.spicyapi.ai/models/examples/topaz-astra/fa7567687c92acad.mp4",
+     "mimeType": "video/mp4",
+     "width": 1920,
+     "height": 1080,
+     "posterMediaKey": "models/examples/topaz-astra/fe34d631574bade1.webp",
+     "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-astra/fe34d631574bade1.webp",
+     "sortWeight": 0,
+     "durationMs": 3008,
+     "alt": "Two people in a wine cellar in Astra\u2019s 1920\u00d71080 MP4, using low creativity without a prompt and retaining the soundtrack."
+    }
+   ],
+   "promptExamples": [],
+   "comparisons": [],
+   "requestedLocale": "en",
+   "contentLocale": "en",
+   "isFallback": false,
+   "publishedAt": "2026-11-03T05:00:56.076373Z",
+   "updatedAt": "2026-11-03T05:00:56.076373Z"
+  },
+  "description": "Astra\u2019s upscale endpoint adds imagined texture to the supplied scene rather than verifying missing camera detail. It returns one MP4 in the chosen tier, making the result a candidate for creative approval rather than exact identity restoration.",
+  "faq": [],
+  "howTo": [],
+  "specs": [],
+  "paramNotes": {
+   "creativity_level": "`low` is the default and stays closest to the source; `medium` and `high` allow progressively more invention. All three levels have the same rate.",
+   "prompt": "Optional text describing the visible scene or desired finish; leaving it empty lets the image guide the interpretation. No separate price change applies to adding text.",
+   "resolution": "Output choices: `720p`, `1080p` (default), `4k`. Aspect ratio stays intact, 720p and 1080p share a rate, and 4K costs more.",
+   "video_url": "Provide an MP4 by URL or upload with a duration of 1\u201360 seconds. Shorter or longer clips are rejected before acceptance; the creative result keeps the source runtime and audio."
+  },
+  "inputSchema": {
+   "additionalProperties": false,
+   "properties": {
+    "creativity_level": {
+     "default": "low",
+     "description": "How much new detail is invented: low stays closest to the source, high is the most creative. Does not change the price.",
+     "enum": [
+      "low",
+      "medium",
+      "high"
+     ],
+     "type": "string",
+     "x-ui": {
+      "enum_labels": {
+       "high": "High",
+       "low": "Low",
+       "medium": "Medium"
+      },
+      "order": 70,
+      "widget": "radio"
+     }
+    },
+    "prompt": {
+     "description": "Optional description of the clip or of the look you want; leave empty to let the model infer it.",
+     "maxLength": 2000,
+     "type": "string",
+     "x-ui": {
+      "order": 95,
+      "widget": "textarea"
+     }
+    },
+    "resolution": {
+     "default": "1080p",
+     "description": "Output tier; the clip's aspect ratio is kept. Sets the per-second rate.",
+     "enum": [
+      "720p",
+      "1080p",
+      "4k"
+     ],
+     "type": "string",
+     "x-ui": {
+      "affects_price": true,
+      "enum_labels": {
+       "1080p": "1080p",
+       "4k": "4K",
+       "720p": "720p"
+      },
+      "order": 80,
+      "widget": "radio"
+     }
+    },
+    "video_url": {
+     "contentMediaType": [
+      "video/mp4",
+      "video/webm",
+      "video/quicktime"
+     ],
+     "description": "The clip to process, 1 to 60 seconds long, as an MP4 link or upload. Length and audio are kept; clips outside that range are rejected before any charge.",
+     "minLength": 1,
+     "type": "string",
+     "x-ui": {
+      "accept": [
+       "video/mp4"
+      ],
+      "order": 100,
+      "primary": true,
+      "widget": "upload"
+     }
+    }
+   },
+   "required": [
+    "video_url"
+   ],
+   "type": "object",
+   "x-pricing": {
+    "billingMode": "duration_capped",
+    "variantFields": [
+     "resolution"
+    ]
+   }
+  },
+  "priceUnit": "second",
+  "priceUnitPlural": "seconds",
+  "policyNote": "",
+  "pricingNote": "Astra\u2019s output tier sets the price and billing-step length; prompt content and creativity do not alter the rate. Source time is rounded to the next second and then the next complete step, with a one-step floor. The second rate shown equals step price divided by its length. On acceptance, funds cover the known upload or 60 seconds for a linked source; the unused portion returns at settlement, and failed processing is free. 720p and 1080p cost the same, while 4K is higher.",
+  "licenseNote": "",
+  "readme": "## Introduction\n\nAstra is designed for shots whose finish can change during enlargement. An AI-generated interior or a stylized sequence may benefit from richer materials even if those materials are newly imagined. The task is therefore to approve a visual interpretation, including its treatment of people, rather than recover a definitive record of the scene.\n\n## Key features & Highlights\n\nCreative freedom has three levels, starting at low, and an optional written description can direct the scene\u2019s appearance. Raising creativity changes the scope for invention without changing the price. The three output tiers are 720p, 1080p and 4K, leaving no intermediate 2K selection in this endpoint.\n\nThe no-prompt cellar run at low creativity added individual hair strands and more distinct glass boundaries, but also altered the woman\u2019s eye and profile. Its three-second source took roughly two hundred ten seconds at 1080p. Even the restrained setting can therefore change meaningful facial detail, and a better-resolved still is only one part of evaluating the returned sequence.\n\n## Use cases\n\nFor a stylized film insert, use a selected interior take to explore a richer surface treatment. Compare clothing, glass and background materials with the intended art direction and with neighboring shots, where a change in visual finish may become conspicuous.\n\nFor AI video finishing, test the chosen take before creating all delivery sizes. Reject an appealing result if a recognizable face or important object drifts beyond what the project permits, even when the new texture looks attractive in isolation.\n\n## Prompt guide & Pro tips\n\nEstablish an unprompted `low` pass before steering the image with text. If direction is needed, describe the visible subject, material and lighting in a coherent sentence; asking for unrelated objects makes the requested finish harder to judge against the supplied composition. Change one control at a time when comparing creative versions.\n\nWatch turns of the head and movement around hair or glass across neighboring frames. Check that the added appearance remains useful throughout the take, then verify dimensions and the retained soundtrack. Choose 4K for the final delivery requirement after creative approval, since a higher tier increases cost without reducing the freedom to reinterpret facial features.",
+  "examples": [
+   {
+    "id": "cellar-low-unprompted-1080p",
+    "note": "The low, no-text cellar run adds hair strands and glass definition while also changing the woman\u2019s profile.",
+    "input": {
+     "video_url": "https://cdn.spicyapi.ai/models/examples/inputs/676ddd16f19d69cb.mp4",
+     "resolution": "1080p",
+     "creativity_level": "low"
+    },
+    "mediaKey": "models/examples/topaz-astra/fa7567687c92acad.mp4",
+    "mediaUrl": "https://cdn.spicyapi.ai/models/examples/topaz-astra/fa7567687c92acad.mp4",
+    "posterUrl": "https://cdn.spicyapi.ai/models/examples/topaz-astra/fe34d631574bade1.webp",
+    "mimeType": "video/mp4",
+    "width": 1920,
+    "height": 1080,
+    "durationMs": 3008,
+    "sortWeight": 100
+   }
+  ],
+  "relatedModels": [
+   "topaz/starlight",
+   "topaz/video-ai",
+   "topaz/bloom"
+  ],
+  "contentTests": [],
+  "taskTimeoutSeconds": 21600
+ },
+ "request_id": "req_06gt0qdzxb8cj9y3tc99ytkdy0"
+}
